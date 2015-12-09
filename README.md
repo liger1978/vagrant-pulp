@@ -2,10 +2,11 @@
 A Vagrant environment for [Pulp](http://http://www.pulpproject.org/)
 
 ## Usage
-Ensure you have a working
+Install
+[Vagrant](https://www.vagrantup.com/downloads.html) and ensure you have a
+working
 [Vagrant provider](https://docs.vagrantup.com/v2/getting-started/providers.html)
-such as [VirtualBox](https://www.virtualbox.org/) and install
-[Vagrant](https://www.vagrantup.com/downloads.html). Then run the following
+such as [VirtualBox](https://www.virtualbox.org/). Then run the following
 commands:
 
 ````bash
@@ -14,7 +15,7 @@ commands:
 vagrant plugin install vagrant-cachier
 #   vagrant-hostmanager will allow you to resolve the VM hostname ("pulp.box")
 #   from your computer
-vagrant plugin vagrant-hostmanager
+vagrant plugin install vagrant-hostmanager
  
 # Clone repo:
 git clone https://github.com/liger1978/vagrant-pulp.git

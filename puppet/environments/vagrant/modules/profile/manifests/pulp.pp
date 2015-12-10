@@ -43,8 +43,8 @@ class profile::pulp(
     subscribe => Exec['pulp-manage-db'],
   }
   file { '/etc/pulp/admin/admin.conf':
-    source => 'puppet:///modules/profile/pulp/admin.conf',
-    mode   => '0644',
+    source  => 'puppet:///modules/profile/pulp/admin.conf',
+    mode    => '0644',
     require => Package['pulp-admin-client'],
   }
 }

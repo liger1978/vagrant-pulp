@@ -2,7 +2,6 @@ class my_fw::pre {
   Firewall {
     require => undef,
   }
-   # Default firewall rules
   firewall { '000 accept all icmp':
     proto  => 'icmp',
     action => 'accept',

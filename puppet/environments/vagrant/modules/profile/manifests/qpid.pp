@@ -7,7 +7,7 @@ class profile::qpid(
     require => Yumrepo['epel-7'],
   } ->
   service{'qpidd':
-    ensure  => 'running',
-    enable  => true,
+    ensure => 'running',
+    enable => true,
   }
 }

@@ -4,7 +4,7 @@ class profile::mongodb(
     require => Yumrepo['epel-7'],
   } ->
   service{'mongod':
-    ensure  => 'running',
-    enable  => true,
+    ensure => 'running',
+    enable => true,
   }
 }

@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
   
   config.vm.provision :shell do |shell|
     shell.inline = "puppet module install puppetlabs/firewall --force \
-                    --target-dir /vagrant/puppet/environments/vagrant/modules/"
+                 --target-dir /tmp/vagrant-puppet/environments/vagrant/modules/"
   end
   
   config.vm.provision "puppet" do |puppet|

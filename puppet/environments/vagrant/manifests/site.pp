@@ -1,5 +1,5 @@
 Service {
-  require +> Class['profile::swap']
+  require => Class['profile::swap']
 }
 Firewall {
   before  => Class['my_fw::post'],

@@ -14,7 +14,11 @@ Vagrant.configure("2") do |config|
     config.cache.scope = :box
     config.cache.enable :yum
   end
-  
+
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 1024
+  end
+
   config.vm.provision :shell do |shell|
     shell.inline = "puppet module install puppetlabs/firewall --force \
                  --target-dir /tmp/vagrant-puppet/environments/vagrant/modules/"
